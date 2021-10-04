@@ -51,3 +51,8 @@ plot3 <- tidied_ufo %>%
        y = NULL) +
   theme_minimal() +
   theme(text = element_text(size = 15))
+
+#Combining plots
+my_plot <- (plot1 + plot3) / (plot2)
+
+ggsave("ufo_plot.jpg", plot = my_plot, width = 12, height = 10)
