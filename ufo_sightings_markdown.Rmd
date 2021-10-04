@@ -5,7 +5,7 @@ date: "04/10/2021"
 output: html_document
 ---
 
-This is my attempt to **independently** display what we learnt in Andrew Stewart's second workshop.
+<span style = "font-family: Papyrus; font-size:1.5em"> This is my attempt to **independently** display what we learnt in Andrew Stewart's second workshop. </span>
 
 ### Below is a diagram of three different plots: 
 * Plot 1 - Top 10 States for UFO Sightings  
@@ -14,4 +14,4 @@ This is my attempt to **independently** display what we learnt in Andrew Stewart
 
 ![](ufo_plot.png "Ufo Sightings")
 
-<span style="font-size:1.5em"> You can find a step-by-step guide to creating these plots at <https://www.youtube.com/watch?v=ABgJfJYmWOs&ab_channel=AndrewStewart><span>
+<span style = "font-size:1.5em"> You can find a step-by-step guide to creating these plots at <https://www.youtube.com/watch?v=ABgJfJYmWOs&ab_channel=AndrewStewart><span>
