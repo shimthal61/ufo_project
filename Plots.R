@@ -23,3 +23,12 @@ plot1 <- ufo_sightings %>%
 tidied_ufo <- ufo_sightings %>% 
   filter(country == "us") %>%
   filter (latitude > 24 & latitude <50)
+
+#Creating plot 2
+plot2 <- tidied_ufo %>%
+  ggplot(aes(x = longitude, y = latitude)) + 
+  geom_point(size = .5, alpha = .25) +
+  theme_void() +
+  coord_cartesian() +
+  labs(title = "Sites of UFO Sightings in the US") +
+  theme(text = element_text(size = 15))
