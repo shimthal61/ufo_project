@@ -32,3 +32,22 @@ plot2 <- tidied_ufo %>%
   coord_cartesian() +
   labs(title = "Sites of UFO Sightings in the US") +
   theme(text = element_text(size = 15))
+
+ #Creating plot 3
+plot3 <- tidied_ufo %>%
+  filter(state == "ca") %>%
+  filter(ufo_shape != "other") %>%
+  filter(ufo_shape != "unknown") %>%
+  group_by(ufo_shape) %>%
+  tally() %>%
+  top_n(10) %>%
+  mutate(ufo_shape = str_to_title(ufo_shape)) %>%
+  ggplot(aes(x = reorder(ufo_shape, n), y = n, fill = ufo_shape)) +
+  geom_col() +
+  coord_flip() + 
+  guides(fill = "none") +
+  labs(title = "Top 10 UFO shapes spotted in California",
+       x = NULL,
+       y = NULL) +
+  theme_minimal() +
+  theme(text = element_text(size = 15))
