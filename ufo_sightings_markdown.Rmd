@@ -1,0 +1,17 @@
+---
+title: "Ufo Sightings"
+author: "Shimthal61"
+date: "04/10/2021"
+output: html_document
+---
+
+This is my attempt to **independently** display what we learnt in Andrew Stewart's second workshop.
+
+### Below is a diagram of three different plots: 
+* Plot 1 - Top 10 States for UFO Sightings  
+* Plot 2 - Top 10 UFO Shapes spotted in California  
+* Plot 3 - Sites of UFO Sightings in the US  
+
+![](ufo_plot.png "Ufo Sightings")
+
+<span style="font-size:1.5em"> You can find a step-by-step guide to creating these plots at <https://www.youtube.com/watch?v=ABgJfJYmWOs&ab_channel=AndrewStewart><span>
