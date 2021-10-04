@@ -55,4 +55,8 @@ plot3 <- tidied_ufo %>%
 #Combining plots
 my_plot <- (plot1 + plot3) / (plot2)
 
-ggsave("ufo_plot.jpg", plot = my_plot, width = 12, height = 10)
+ggsave("ufo_plot.png", plot = my_plot, width = 12, height = 10)
+
+img1_path <- "ufo_plot.png"
+img1 <- readPNG(img1_path, native = TRUE, info = TRUE)
+attr(img1, "info")
